@@ -643,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 17, sass/partials/_structure-layout.scss */
 .container-inner {
-  max-width: 1380px;
+  $site-max-widthpx;
   min-width: 1380px;
   width: 100%;
   margin: 0 auto; }
@@ -671,7 +671,7 @@ h1, h2, h3, h4, h5, h6 {
 /* boxed */
 /* line 47, sass/partials/_structure-layout.scss */
 .boxed #wrapper {
-  max-width: 1380px;
+  $site-max-widthpx;
   margin: 0 auto;
   -webkit-box-shadow: 6px 0 0 rgba(0, 0, 0, 0.04), -6px 0 0 rgba(0, 0, 0, 0.04);
   box-shadow: 6px 0 0 rgba(0, 0, 0, 0.04), -6px 0 0 rgba(0, 0, 0, 0.04); }

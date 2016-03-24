@@ -40,6 +40,20 @@ add_theme_support( 'genesis_menus', array(
 	'secondary' => __( 'Header Bottom Navigation Menu', 'hueman')
 	) );
 
+//* Relocate Primary (top) Navigation
+remove_action(' genesis_after_header', 'genesis_do_nav' );
+add_action( 'genesis_before', 'genesis_do_nav', 4 );
+
+//*Relocate Header outside Site Container
+remove_action( 'genesis_header', 'genesis_header_markup_open', 5 );
+remove_action( 'genesis_header', 'genesis_do_header' );
+remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
+add_action( 'genesis_before', 'genesis_header_markup_open', 5 );
+add_action( 'genesis_header', 'genesis_do_header' );
+add_action( 'genesis_before', 'genesis_header_markup_close', 5 );
+
+
+
 //* Add new image sizes
 add_image_size( 'home-top', 780, 354, TRUE);
 add_image_size( 'home-middle', 375, 175, TRUE);

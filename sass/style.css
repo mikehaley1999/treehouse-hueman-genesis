@@ -33,6 +33,8 @@ Tags: responsive-layout, custom-menu, full-width-template
 - Site Footer
 - Media Queries
 */
+/* Fool-proof @font-face */
+/* Based on http://coding.smashingmagazine.com/2013/02/14/setting-weights-and-styles-at-font-face-declaration/ */
 /*# HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
 /* ## Baseline Normalize
@@ -668,34 +670,21 @@ img {
   height: auto; }
 
 a {
-  -webkit-transition-property: background color;
-  -webkit-transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease;
-  -moz-transition-property: background color;
-  -moz-transition-duration: 0.2s;
-  -moz-transition-timing-function: ease;
-  -o-transition-property: background color;
-  -o-transition-duration: 0.2s;
-  -o-transition-timing-function: ease;
-  transition-property: background color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease; }
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -ms-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease; }
   a:before, a:after {
-    -webkit-transition-property: background color;
-    -webkit-transition-duration: 0.2s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-property: background color;
-    -moz-transition-duration: 0.2s;
-    -moz-transition-timing-function: ease;
-    -o-transition-property: background color;
-    -o-transition-duration: 0.2s;
-    -o-transition-timing-function: ease;
-    transition-property: background color;
-    transition-duration: 0.2s;
-    transition-timing-function: ease; }
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease; }
   a img {
     -webkit-transition: opacity 0.2s ease;
     -moz-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
     -o-transition: opacity 0.2s ease;
     transition: opacity 0.2s ease; }
 
@@ -747,33 +736,33 @@ body {
   font-family: "Titillium", Arial, sans-serif; }
 
 @font-face {
-  font-family: 'Titillium';
+  font-family: Titillium;
   src: url("fonts/titillium-light-webfont.eot");
-  src: url("fonts/titillium-light-webfont.svg#titillium-light-webfont") format("svg"), url("fonts/titillium-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-light-webfont.woff") format("woff"), url("fonts/titillium-light-webfont.ttf") format("truetype");
+  src: url("fonts/titillium-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-light-webfont.woff") format("woff"), url("fonts/titillium-light-webfont.ttf") format("truetype"), url("fonts/titillium-light-webfont.svg#font-family") format("svg");
   font-weight: 300;
   font-style: normal; }
 @font-face {
-  font-family: 'Titillium';
+  font-family: Titillium;
   src: url("fonts/titillium-lightitalic-webfont.eot");
-  src: url("fonts/titillium-lightitalic-webfont.svg#titillium-lightitalic-webfont") format("svg"), url("fonts/titillium-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-lightitalic-webfont.woff") format("woff"), url("fonts/titillium-lightitalic-webfont.ttf") format("truetype");
+  src: url("fonts/titillium-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-lightitalic-webfont.woff") format("woff"), url("fonts/titillium-lightitalic-webfont.ttf") format("truetype"), url("fonts/titillium-lightitalic-webfont.svg#font-family") format("svg");
   font-weight: 300;
   font-style: italic; }
 @font-face {
-  font-family: 'Titillium';
+  font-family: Titillium;
   src: url("fonts/titillium-regular-webfont.eot");
-  src: url("fonts/titillium-regular-webfont.svg#titillium-regular-webfont") format("svg"), url("fonts/titillium-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-regular-webfont.woff") format("woff"), url("fonts/titillium-regular-webfont.ttf") format("truetype");
+  src: url("fonts/titillium-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-regular-webfont.woff") format("woff"), url("fonts/titillium-regular-webfont.ttf") format("truetype"), url("fonts/titillium-regular-webfont.svg#font-family") format("svg");
   font-weight: 400;
   font-style: normal; }
 @font-face {
-  font-family: 'Titillium';
+  font-family: Titillium;
   src: url("fonts/titillium-regularitalic-webfont.eot");
-  src: url("fonts/titillium-regularitalic-webfont.svg#titillium-regular-webfont") format("svg"), url("fonts/titillium-regularitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-regularitalic-webfont.woff") format("woff"), url("fonts/titillium-regularitalic-webfont.ttf") format("truetype");
+  src: url("fonts/titillium-regularitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-regularitalic-webfont.woff") format("woff"), url("fonts/titillium-regularitalic-webfont.ttf") format("truetype"), url("fonts/titillium-regularitalic-webfont.svg#font-family") format("svg");
   font-weight: 400;
   font-style: italic; }
 @font-face {
-  font-family: 'Titillium';
+  font-family: Titillium;
   src: url("fonts/titillium-semibold-webfont.eot");
-  src: url("fonts/titillium-semibold-webfont.svg#titillium-semibold-webfont") format("svg"), url("fonts/titillium-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-semibold-webfont.woff") format("woff"), url("fonts/titillium-semibold-webfont.ttf") format("truetype");
+  src: url("fonts/titillium-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/titillium-semibold-webfont.woff") format("woff"), url("fonts/titillium-semibold-webfont.ttf") format("truetype"), url("fonts/titillium-semibold-webfont.svg#font-family") format("svg");
   font-weight: 600;
   font-style: normal; }
 /*  base : forms
