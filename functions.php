@@ -52,7 +52,8 @@ add_action( 'genesis_before', 'genesis_header_markup_open', 5 );
 add_action( 'genesis_header', 'genesis_do_header' );
 add_action( 'genesis_before', 'genesis_header_markup_close', 5 );
 
-
+//* Relocate Secondary (bottom) Navigation
+remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 
 //* Add new image sizes
 add_image_size( 'home-top', 780, 354, TRUE);
