@@ -49,10 +49,10 @@
 
 .col-2cl {
 	.main-inner {
-		background: url(img/sidebar/s-right-s1.png) repeat-y right 0;
+		background: url(img/sidebar/s-right-sidebar-primary.png) repeat-y right 0;
 		padding-right: 340px;
 	}
-	.s1 {
+	.sidebar-primary {
 		float: right;
 		margin-right: -340px;
 	}
@@ -68,7 +68,7 @@
 		background: url(img/sidebar/s-left.png) repeat-y left 0;
 		padding-left: 340px;
 	}
-	.s1 {
+	.sidebar-primary {
 		float: left;
 		margin-left: -340px;
 	}
@@ -81,18 +81,18 @@
 
 .col-3cm {
 	.main {
-		background: url(img/sidebar/s-right-s2.png) repeat-y right 0;
+		background: url(img/sidebar/s-right-sidebar-secondary.png) repeat-y right 0;
 	}
 	.main-inner {
 		background: url(img/sidebar/s-left.png) repeat-y left 0;
 		padding-left: 340px;
 		padding-right: 260px;
 	}
-	.s1 {
+	.sidebar-primary {
 		float: left;
 		margin-left: -340px;
 	}
-	.s2 {
+	.sidebar-secondary {
 		float: right;
 		margin-right: -260px;
 		/* ingenuity! */
@@ -114,11 +114,11 @@
 		background: url(img/sidebar/s-right-dual-full-expand.png) repeat-y right 0;
 		padding-right: 600px;
 	}
-	.s1 {
+	.sidebar-primary {
 		float: right;
 		margin-right: -600px;
 	}
-	.s2 {
+	.sidebar-secondary {
 		float: right;
 		margin-right: -260px;
 	}
@@ -137,11 +137,11 @@
 		background: url(img/sidebar/s-left-dual-full-expand.png) repeat-y left 0;
 		padding-left: 600px;
 	}
-	.s1 {
+	.sidebar-primary {
 		float: left;
 		margin-left: -600px;
 	}
-	.s2 {
+	.sidebar-secondary {
 		float: left;
 		margin-left: -260px;
 	}

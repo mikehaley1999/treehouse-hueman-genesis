@@ -54,6 +54,11 @@ add_action( 'genesis_before', 'genesis_header_markup_close', 5 );
 
 //* Relocate Secondary (bottom) Navigation
 remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+add_action( 'genesis_before', 'genesis_do_subnav', 14);
+
+//* Move the Secondary Sidebar into the Content Sidebar Wrap area.
+remove_action( 'genesis_after_content_sidebar_wrap', 'genesis_register_sidebar_alt');
+add_action( 'genesis_after_content', 'genesis_register_sidebar_alt');
 
 //* Add new image sizes
 add_image_size( 'home-top', 780, 354, TRUE);
